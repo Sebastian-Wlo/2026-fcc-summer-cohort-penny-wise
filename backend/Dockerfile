@@ -1,4 +1,4 @@
-FROM node:22-alpine AS prod
+FROM node:22-slim AS prod
 
 WORKDIR /app
 
@@ -14,7 +14,7 @@ EXPOSE 5000
 
 CMD ["node", "src/server.js"]
 
-FROM node:22-alpine AS dev
+FROM node:22-slim AS dev
 
 WORKDIR /src
 
