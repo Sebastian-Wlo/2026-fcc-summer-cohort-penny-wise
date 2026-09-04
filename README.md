@@ -62,11 +62,11 @@ docker compose -f docker-compose.yml -f docker-compose.dev.yml up --build --watc
 
 This starts three services:
 
-- mongo    - MongoDB on port 27010
+- mongo    - MongoDB on port 27017
 - backend  - Express API on http://localhost:5000
 - frontend - Next.js frontend on http://localhost:3000
 
-Once all serics are running, seed some demo data:
+Once all services are running, seed some demo data:
 
 ```
 docker-compose exec api npm run seed

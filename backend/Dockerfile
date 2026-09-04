@@ -4,11 +4,11 @@ WORKDIR /app
 
 COPY package*.json ./
 
-RUN npm install --omit=dev
+#RUN npm install --omit=dev
 
 COPY . .
 
-RUN npm install
+RUN npm install --omit=dev
 
 EXPOSE 5000
 
