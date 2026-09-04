@@ -19,6 +19,4 @@ services:
     ports:
       - "5173:5173"
 
-volumes:
-  pennywise_db: {}
 
