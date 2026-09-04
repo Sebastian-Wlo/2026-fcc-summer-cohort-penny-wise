@@ -50,24 +50,23 @@ cp .env.example .env
 
 `docker compose up` start three containers: `frontend`, `backend` and `mongo` - another option is to start the containers separately by adding the container(s) name after the `compose up` command.
 
-- *Running the database with MongoDB Atlas*: create a M0 cluster, add a database user under "Database Access" and allow either your IPm or 0.0.0.0/0 under "Network Access". Then, copy the Connection string (it should look something like this: `mongodb+srv://<db_user>:<db_password>@cluster0.<example>.mongodb.net/?appName=<cluster_name>`) into the `.env` as `MONGODB_URI`.
+- *Running the database with MongoDB Atlas*: create a M0 cluster, add a database user under "Database Access" and allow either your IP or 0.0.0.0/0 under "Network Access". Then, copy the connection string (it should look something like this: `mongodb+srv://<db_user>:<db_password>@cluster0.<example>.mongodb.net/?appName=<cluster_name>`) into the `.env` as `MONGODB_URI`.
 
-When using Atlas, replace `docker-compose.yml` with `docker-compose-atlas.yml`.
+When using Atlas, replace `docker-compose.yml` with `docker-compose-atlas.yml`. This compose file skips creation of the MongoDB container.
 
-To run the development version of the containers, with atomatic reloading on file changes, start the containers with:
+To run the development version of the containers (with automatic reloads on file changes), start the containers with:
 
 ```bash
 docker compose -f docker-compose.yml -f docker-compose.dev.yml up --build --watch
 ```
 
-For development purposes, 
 This starts three services:
 
 - mongo    - MongoDB on port 27010
 - backend  - Express API on http://localhost:5000
 - frontend - Next.js frontend on http://localhost:3000
 
-Once it's up, seed some demo data:
+Once all serics are running, seed some demo data:
 
 ```
 docker-compose exec api npm run seed
