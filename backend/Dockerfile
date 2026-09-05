@@ -17,7 +17,6 @@ FROM node:22-slim AS dev
 WORKDIR /src
 
 ENV PORT=5000
-ENV MONGODB_URI=mongodb://mongo:27017/pennywise_db?authSource=admin
 
 COPY package*.json ./
 
