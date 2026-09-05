@@ -7,8 +7,7 @@ services:
     ports: 
       - "5000:5000"
     environment:
-     required: true
-     - MONGODB_URI=${MONGODB_URI}
+     - ${MONGODB_URI:?MONGODB_URI must be set}
 
   frontend:
     build:
@@ -19,5 +18,3 @@ services:
       - backend
     ports:
       - "5173:5173"
-
-
