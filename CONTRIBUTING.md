@@ -33,20 +33,16 @@ Please only work on one one issue at a time so everyone gets a fair chance to co
 
 File names should be planned to be used in a Linux System. This means, they are case sensitive.
 
-- use lowercase names written in snake_case or kebab-case for all files, except for
+- use lowercase names written in kebab-case for all files, except for
 - React classes or modules, which should use PascalCase.
 
-### Tools for Frontend
+### Tools for linting and styling
 
-Before submitting your changes, you can run `npm run lint` from the `/frontend` directory, to check for potential issues, like declared but unused variables,
+Before submitting your changes, you can run the following scripts from either `/frontend` or `/backend` directories to check for linting and styling errors:
 
-### Tools for Backend
-
-> [!CAUTION]
-> `prettier` might not be configured correctly yet - please make sure if the `backend/.prettierc` file exists, and the settings correspond to the rules laid out in this guide before running the commands
-
-Before submitting your changes, you can run `npm run format:check` to make sure the style in your changes correspond to the guidelines.
-- Alternatively, you can run `npm run format` to automatically format your code according to the rules.
+- `npm run lint` to check for potential issues, like declared but unused variables,
+- `npm run format:check` to make sure the style in your changes correspond to the guidelines,
+- `npm run format` to automatically format your code according to the rules.
 
 ---
 
