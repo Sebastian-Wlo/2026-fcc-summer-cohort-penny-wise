@@ -1,6 +1,6 @@
-# Contributing to Penny wise
+# Contributing to Penny Wise
 
-Welcome to the Penny wise project! This is a part of the freeCodeCamp Summer 2026 Cohort. This document covers how to claim an issue, which style guides to follow, and how to submit a Pull Request.
+Welcome to the Penny Wise project! This is a part of the freeCodeCamp Summer 2026 Cohort. This document covers how to claim an issue, which style guides to follow, and how to submit a Pull Request.
 
 ## Claiming an issue
 
@@ -26,17 +26,17 @@ Please only work on one one issue at a time so everyone gets a fair chance to co
 ## Code Style Guide
 
 1. Keep functions small and readable.
-2. Use double quotation marks (`""`).
+2. Use single quotation marks (`''`).
 3. End files with a "Line Feed" (`LF`).
 
 ## File Names
 
 File names should be planned to be used in a Linux System. This means, they are case sensitive.
 
-- use lowercase names written in kebab-case for all files, except for
+- use lower case names written in kebab-case for all files, except for
 - React classes or modules, which should use PascalCase.
 
-### Tools for linting and styling
+## Tools for Linting and Styling
 
 Before submitting your changes, you can run the following scripts from either `/frontend` or `/backend` directories to check for linting and styling errors:
 
